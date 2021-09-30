@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="IE=edge"
+  >
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <title>Charge Station Practice</title>
+</head>
+
+<body>
+  <h2>新增資料</h2>
+  <input
+    type="text"
+    placeholder="充電站名稱"
+    class="chargeStationName"
+  >
+  <select
+    class="chargeStationKind"
+    value="免費"
+  >
+    <option value="免費">免費</option>
+    <option value="投幣式">投幣式</option>
+  </select>
+  <input
+    type="button"
+    value="新增"
+    class="add"
+  >
+  <h2>資料顯示</h2>
+  <div class="filter">
+    <input
+      type="button"
+      value="全部"
+    >
+    <input
+      type="button"
+      value="免費"
+    >
+    <input
+      type="button"
+      value="投幣式"
+    >
+  </div>
+  <h3 class="showFilterStatus"></h3>
+  <ul class="list">
+  </ul>
+  <script src="all.js"></script>
+</body>
+
+</html>
