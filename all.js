@@ -73,6 +73,7 @@ render(data)
 // ----- 新增功能 -----
 // 新增過程
 function addHandler(e) {
+  filterStatus = '全部'
   let dataObj = {}
   dataObj['chargeStationId'] = generateId()
   dataObj['chargeStationName'] = chargeStationName.value
@@ -81,6 +82,7 @@ function addHandler(e) {
   chargeStationName.value = ''
   // 新增後重新渲染
   render(data)
+  updateFilterStatus(filterStatus)
 }
 // 點擊新增
 add.addEventListener('click', addHandler)
